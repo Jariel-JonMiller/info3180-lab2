@@ -1,0 +1,39 @@
+{% extends 'base.html'%}
+
+    {% block css %}
+        <style type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+        </style>
+    {% endblock %}
+
+    {% block main %}
+        <div class="top-part">
+            <img src="{{ url_for('static', filename='pikachu-oh.jpg') }}" alt="PIKACHU image">  
+            <h1>Jariel-Jon Miller</h1>
+            <h3>@mjariel</h3>
+            <h3>Kingston, Jamaica</h3>
+            <h3>{{ date_joined }}</h3>
+        </div>
+
+        <p>I am a hard-working individual who strives at what he does. To 
+            me, the experience and journey is worth more than the reward. 
+            But the reward can sometimes be very rewarding. Join me on my journey to become the best!</p>
+        <div class="follow-me">
+            <div class="posts-sect">
+                <h3>7</h3>
+                <h3>Posts</h3>
+            </div>
+
+            <div class="following-sect">
+                <h3>104</h3>
+                <h3>Following</h3>
+            </div>
+            <div class="followers-sect">
+                <h3>199</h3>
+                <h3>Followers</h3>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit">Follow</button>
+        </div>
+    {% endblock %}
